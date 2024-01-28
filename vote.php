@@ -119,41 +119,75 @@ if (!$_SESSION['s_username']) {
 
                                             </div>
                                         </div>
+                                    <?php } ?>
+                                    <?php
+                                    if ($s_select == 3) {
+                                    ?>
+                                        <div class="row pt-4 pb-4 ">
+                                            <div class="col-xl-12 ">
+                                                <p align="center">
+                                                    <img src="./img/yrc_logo.png" class="img-fluid" width="20%" alt="">
+                                                <h5 align="center" style="font-weight: 500;">คุณได้ใช้สิทธิ์เลือกตั้งเรียบร้อยแล้ว </h5>
+                                                </p>
+
+                                               
+
+                                            </div>
+                                        </div>
                                     <?php }
                                     if ($s_select < 1) { ?>
                                         <div class="row ">
                                             <div class="col-xl-6 col-lg-6 pt-4 pb-4">
 
                                                 <p align="center">
-                                                    <img src="./img/thyme_logo.png" class="img-fluid" width="50%" alt="">
+                                                    <img src="./img/RAY_logo.png" class="img-fluid" width="50%" alt="">
                                                 <p class="mt-3" align="center">หมายเลข 1</p>
-                                                <h2 align="center" style="font-weight: 700;color:#ed3e63;margin:0">พรรคไธม์ </h2>
+                                                <h2 align="center" style="font-weight: 700;color:#ed3e63;margin:0">พรรค RAY</h2>
                                                 <p align="center">
-                                                    <a href="./pdf/thyme.pdf" target="_blank" style="color:#7c7575;">นโยบายพรรค</a>
+                                                    <a href="./pdf/RAY.pdf" target="_blank" style="color:#7c7575;">นโยบายพรรค</a>
                                                 </p>
                                                 </p>
                                                
 
                                                 <p align="center" class="mt-2">
-                                                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Thyme">ลงคะแนนเสียง</a>
+                                                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#RAY">ลงคะแนนเสียง</a>
 
                                                 </p>
                                             </div>
                                             <div class="col-xl-6 col-lg-6 pt-4 pb-4">
                                                 <p align="center">
-                                                    <img src="./img/magent_logo.png" class="img-fluid" width="50%" alt="">
+                                                    <img src="./img/prompt_logo.png" class="img-fluid" width="50%" alt="">
                                                 <p class="mt-3" align="center">หมายเลข 2</p>
-                                                <h2 align="center" style="font-weight: 700;color:#ed3e63;margin:0">พรรคมาเจนท์ </h2>
+                                                <h2 align="center" style="font-weight: 700;color:#ed3e63;margin:0">พรรค Prompt</h2>
 
                                                 </p>
                                                 <p align="center">
-                                                    <a href="./pdf/magent.pdf" target="_blank" style="color:#7c7575">นโยบายพรรค</a>
+                                                    <a href="./pdf/Prompt.pdf" target="_blank" style="color:#7c7575">นโยบายพรรค</a>
                                                 </p>
                                                 <p align="center" class="mt-2">
-                                                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Magent">ลงคะแนนเสียง</a>
+                                                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Prompt">ลงคะแนนเสียง</a>
 
                                                 </p>
                                             </div>
+                                            <div class="col-xl-3 col-lg-3"></div>
+                                            <div class="col-xl-6 col-lg-6 pt-4 pb-4">
+
+                                                <p align="center">
+                                                    <img src="./img/Rely_logo.png" class="img-fluid" width="50%" alt="">
+                                                <p class="mt-3" align="center">หมายเลข 3</p>
+                                                <h2 align="center" style="font-weight: 700;color:#ed3e63;margin:0">พรรค Rely</h2>
+                                                <p align="center">
+                                                    <a href="./pdf/Rely.pdf" target="_blank" style="color:#7c7575;">นโยบายพรรค</a>
+                                                </p>
+                                                </p>
+                                               
+
+                                                <p align="center" class="mt-2">
+                                                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Rely">ลงคะแนนเสียง</a>
+
+                                                </p>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-3"></div>
 
                                         </div>
                                     <?php } ?>
@@ -164,8 +198,8 @@ if (!$_SESSION['s_username']) {
                 </div>
 
 
-                <!-- Thyme -->
-                <div class="modal fade" id="Thyme" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <!-- RAY -->
+                <div class="modal fade" id="RAY" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -173,7 +207,7 @@ if (!$_SESSION['s_username']) {
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                คุณต้องการลงคะแนนเสียงให้ <strong>หมายเลข 1 พรรคไธม์ (Thyme) </strong> ใช่หรือไม่
+                                คุณต้องการลงคะแนนเสียงให้ <strong>หมายเลข 1 พรรค RAY </strong> ใช่หรือไม่
                             </div>
                             <div class="modal-footer">
 
@@ -185,8 +219,8 @@ if (!$_SESSION['s_username']) {
                     </div>
                 </div>
 
-                <!-- Magent -->
-                <div class="modal fade" id="Magent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <!-- Prompt -->
+                <div class="modal fade" id="Prompt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -194,12 +228,33 @@ if (!$_SESSION['s_username']) {
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                คุณต้องการลงคะแนนเสียงให้ <strong>หมายเลข 2 พรรคมาเจนท์ (Magent) </strong> ใช่หรือไม่
+                                คุณต้องการลงคะแนนเสียงให้ <strong>หมายเลข 2 พรรค Prompt (พร้อม) </strong> ใช่หรือไม่
                             </div>
                             <div class="modal-footer">
 
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
                                 <a href="./process/submit.php?vote=2" type="button" class="btn btn-primary">ตกลง</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rely -->
+                <div class="modal fade" id="Rely" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">ยืนยันการลงคะแนนเสียง</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                คุณต้องการลงคะแนนเสียงให้ <strong>หมายเลข 3 พรรค Rely</strong> ใช่หรือไม่
+                            </div>
+                            <div class="modal-footer">
+
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+                                <a href="./process/submit.php?vote=3" type="button" class="btn btn-primary">ตกลง</a>
 
                             </div>
                         </div>
@@ -228,4 +283,4 @@ if (!$_SESSION['s_username']) {
     </body>
 
     </html>
-<?php } ?>
+<?php } ?>  

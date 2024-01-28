@@ -5,7 +5,7 @@ backdrop-filter: blur( 5px );
 >
     <div class="sidebar__top">
         <a class="sidebar__logo">
-            <img class="sidebar__pic" src="img/logo6.svg" alt="" />
+            <img class="sidebar__pic" src="img/logo.png" alt="" />
         </a>
         <button class="sidebar__burger"></button>
         <button class="sidebar__close" style="background:none;font-size:x-large;color:#aeb0c2">
