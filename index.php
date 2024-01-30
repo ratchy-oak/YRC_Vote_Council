@@ -185,7 +185,7 @@
             }
         }
 
-        @media screen and (max-width: 420px) {
+        @media screen and (max-width: 430px) {
             .sign-in-container {
                 left: 0;
                 width: 100%;
