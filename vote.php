@@ -50,7 +50,7 @@ if (!$_SESSION['s_username']) {
                                     </p>
 
                                     <?php
-                                    if ($s_select < 1) {
+                                    if ($s_select == 0) {
                                     ?>
                                         <div class="d-grid gap-2 mt-3">
                                             <a class="btn btn-danger " style="pointer-events: none;">ยังไม่ได้ลงคะแนน</a>
@@ -134,6 +134,21 @@ if (!$_SESSION['s_username']) {
 
                                             </div>
                                         </div>
+                                    <?php } ?>
+                                    <?php
+                                    if ($s_select == 4) {
+                                    ?>
+                                        <div class="row pt-4 pb-4 ">
+                                            <div class="col-xl-12 ">
+                                                <p align="center">
+                                                    <img src="./img/yrc_logo.png" class="img-fluid" width="20%" alt="">
+                                                <h5 align="center" style="font-weight: 500;">คุณได้ใช้สิทธิ์เลือกตั้งเรียบร้อยแล้ว </h5>
+                                                </p>
+
+                                               
+
+                                            </div>
+                                        </div>
                                     <?php }
                                     if ($s_select < 1) { ?>
                                         <div class="row ">
@@ -169,7 +184,6 @@ if (!$_SESSION['s_username']) {
 
                                                 </p>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3"></div>
                                             <div class="col-xl-6 col-lg-6 pt-4 pb-4">
 
                                                 <p align="center">
@@ -187,7 +201,21 @@ if (!$_SESSION['s_username']) {
 
                                                 </p>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3"></div>
+                                            <div class="col-xl-6 col-lg-6 pt-4 pb-4">
+
+                                                <p align="center">
+                                                    <img src="./img/notvote.png" class="img-fluid" width="50%" alt="">
+                                                <p class="mt-4"></p>
+                                                <h2 align="center" style="font-weight: 700;color:#ed3e63;margin:0">ไม่ประสงค์ลงคะแนน</h2>
+                                                <p class="mt-4"></p>
+                                                </p>
+                                               
+
+                                                <p align="center" class="mt-2">
+                                                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#notvote">ลงคะแนนเสียง</a>
+
+                                                </p>
+                                            </div>
 
                                         </div>
                                     <?php } ?>
@@ -255,6 +283,27 @@ if (!$_SESSION['s_username']) {
 
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
                                 <a href="./process/submit.php?vote=3" type="button" class="btn btn-primary">ตกลง</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- notvote -->
+                <div class="modal fade" id="notvote" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">ยืนยันการลงคะแนนเสียง</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                คุณต้องการจะ <strong>ไม่ประสงค์ลงคะแนน</strong> ใช่หรือไม่
+                            </div>
+                            <div class="modal-footer">
+
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+                                <a href="./process/submit.php?vote=4" type="button" class="btn btn-primary">ตกลง</a>
 
                             </div>
                         </div>

@@ -82,7 +82,6 @@ include('./connect/connect.php');
                                     </p>
 
                                 </div>
-                                <div class="col-xl-3 col-lg-3"></div>
                                 <div class="col-xl-6 col-lg-6 pt-4 pb-5 ">
 
                                 <?php 
@@ -104,6 +103,28 @@ include('./connect/connect.php');
                                         <span class="badge rounded-pill bg-light text-dark mt-3" style="font-weight:normal;font-size:20px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="ได้รับคะแนน <?php echo $n2 ?> เสียง">
                                             <i style="color:#d63384" class="fas fa-vote-yea"></i>&nbsp;
                                             <?php echo $n2 ?></span>
+                                    </p>
+
+                                </div>
+                                <div class="col-xl-6 col-lg-6 pt-4 pb-5 ">
+
+                                <?php 
+                                    $s3 = "SELECT * FROM student WHERE s_select = '4' ";
+                                    $q3 = mysqli_query($conn, $s3);
+                                    $n3 = mysqli_num_rows($q3);
+                                ?>
+
+                                    <p align="center">
+                                        <img src="./img/notvote.png" class="img-fluid" width="50%" alt="">
+                                    <p class="mt-4"></p>
+                                    <h2 align="center" style="font-weight: 700;color:#ed3e63;margin:0">ไม่ประสงค์ลงคะแนน</h2>
+                                    <p class="mt-4"></p>
+                                    </p>
+
+                                    <p align="center">
+                                        <span class="badge rounded-pill bg-light text-dark mt-3" style="font-weight:normal;font-size:20px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="ไม่ประสงค์ลงคะแนน <?php echo $n3 ?> เสียง">
+                                            <i style="color:#d63384" class="fas fa-vote-yea"></i>&nbsp;
+                                            <?php echo $n3 ?></span>
                                     </p>
 
                                 </div>
